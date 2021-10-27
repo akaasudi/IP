@@ -50,12 +50,3 @@ form.addEventListener("submit", function (event) {
 function validateUsername(username) {
     return username.length <= 20;
 }
-
-function validatePassword(password) {
-    if(password.length >= 8 && /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[^a-zA-Z0-9])(?!.*\s)/.test(password)){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
